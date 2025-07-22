@@ -4,7 +4,8 @@ terraform {
     key            = "prod/terraform.tfstate"      # Path inside the bucket for your state file
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"             # DynamoDB table for locking
-    encrypt        = true                           # Enable encryption of state file at rest
+    encrypt        = true
+    use_locking = true
   }
 }
 
