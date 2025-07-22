@@ -40,7 +40,7 @@ pipeline {
             steps {
                 input message: 'Approve Terraform Apply?'
                 echo 'Applying Terraform changes...'
-                sh 'terraform apply'
+                sh 'terraform apply -auto-approve'
             }
         }
     }
