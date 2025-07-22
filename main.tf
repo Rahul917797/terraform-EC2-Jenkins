@@ -5,7 +5,6 @@ terraform {
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"             # DynamoDB table for locking
     encrypt        = true
-    use_locking = true
   }
 }
 
